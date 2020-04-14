@@ -1,0 +1,17 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  creationTimestamp: "2020-04-14T07:48:27Z"
+  name: ajinkya-finance-rolebinding
+  namespace: finance
+  resourceVersion: "1695"
+  selfLink: /apis/rbac.authorization.k8s.io/v1/namespaces/finance/rolebindings/ajinkya-finance-rolebinding
+  uid: 5368f452-7e24-11ea-b478-0242c30574fe
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: ajinkya-finance
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: User
+  name: ajinkya
