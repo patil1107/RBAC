@@ -1,0 +1,19 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  creationTimestamp: "2020-04-14T07:46:24Z"
+  name: ajinkya-finance
+  namespace: finance
+  resourceVersion: "2351"
+  selfLink: /apis/rbac.authorization.k8s.io/v1/namespaces/finance/roles/ajinkya-finance
+  uid: 0a064ccf-7e24-11ea-b478-0242c30574fe
+rules:
+- apiGroups:
+  - '*'
+  resources:
+  - pods
+  - deployments
+  - services
+  verbs:
+  - get
+  - list
